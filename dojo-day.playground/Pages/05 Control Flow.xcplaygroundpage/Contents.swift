@@ -1,36 +1,6 @@
-
-// |=------------------------------------------------------=|
-//  Copyright (c) 2016 Juan Antonio Karmy.
-//  Licensed under MIT License
-//
-//  See https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/ for Swift Language Reference
-//
-//  See Juan Antonio Karmy - http://karmy.co | http://twitter.com/jkarmy
-//
-// |=------------------------------------------------------=|
-
-
-//Index is implicitly declared
-for index in 1...5 {
-    print("Index is \(index)")
-}
-
-//In this case, we don't care about the value.
-for _ in 1..<6 {
-    print("No value")
-}
-
-//Use tuples
-let dictionary = ["one": 1, "two": 2, "three": 3]
-for (numberName, numberValue) in dictionary {
-    print("\(numberName) is \(numberValue)")
-}
-
-//Go through a string
-var char = "e"
-for char in "Yes".characters {
-    print("\(char)")
-}
+/*:
+ ## Controle de fluxo
+ */
 
 //Switches
 
