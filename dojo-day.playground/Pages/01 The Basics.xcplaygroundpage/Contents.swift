@@ -1,5 +1,5 @@
 /*:
- # DOJO DAY
+ # DOJO DAY SWIFT
  */
 
 /*:
@@ -80,7 +80,7 @@ func guardExample(value: Int?) {
 guardExample(value: optional)
 
 /*:
- Dá pra usar implicitly unwrapped optionals. O valor se torna disponível assim que acessado. powered by java.lang.NullPointerException
+ Dá pra usar implicitly unwrapped optionals. O valor se torna disponível assim que acessado. não recomendado mas as vezes necessário
  */
 
 let knownString: Int! = 10
@@ -88,11 +88,4 @@ if knownString != nil {
     "It's got a value"
     knownString
 }
-
-assert(true == true, "True isn't equal to false")
-
-/*:
- ****
- [Previous](@previous) | [Next](@next)
- */
 

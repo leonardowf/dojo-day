@@ -1,10 +1,8 @@
 import UIKit
 
-// Arrays and dictionaries in swift use generics and can be mutable or immutable
-// depending on whether they are assigned to a var or let
-// Structs are VALUE types, which means that when working with mutating functions, you'll need to store them in "var". Everytime the struct is "mutated", a new struct will be created and stored in that var.
+//: Arrays e dicionários usam generics e podem ser mutaveis ou imutaveis dependendo se sao declarados com var ou let
 
-//Arrays
+//: Arrays
 
 var shoppingList: [String] = ["Eggs", "Pigs"]
 var anotherShoppingList = ["Eggs", "Pigs"]
@@ -35,7 +33,7 @@ var reversedShoppingList: [String] = shoppingList.reversed()
 reversedShoppingList.removeLast()
 reversedShoppingList.popLast()
 
-//Dictionaries
+//: Dictionaries
 
 var airports: [String: String] = ["JFK": "John F. Kennedy", "SCL": "Arturo Merino Benitez"]
 airports = ["JFK": "John F. Kennedy", "SCL": "Arturo Merino Benitez"]

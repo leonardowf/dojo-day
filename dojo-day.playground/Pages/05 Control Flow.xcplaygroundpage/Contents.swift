@@ -2,9 +2,9 @@
  ## Controle de fluxo
  */
 
-//Switches
+//: ### Switches
 
-// No need for break, and every case must have some code.
+//:não precisa de break
 let someChar = "e"
 switch someChar {
 case "a", "e", "i", "o", "u":
@@ -13,8 +13,7 @@ default:
     print("\(someChar) is a consonant")
 }
 
-//There can also be range matching
-
+//:dá pra fazer range matching
 let count = 3_000_000_000_000
 let countedThings = "stars"
 
@@ -27,8 +26,7 @@ default:
     print("a lot of")
 }
 
-//Use tuples
-
+//:dá pra usar tuplas
 let coord = (1,1)
 
 switch coord {
@@ -44,39 +42,21 @@ default:
     print("out of bounds")
 }
 
-//Value binding: Assign temp values to variables inside the cases.
+//:dá pra bindar valores
 let anotherPoint = (0, 0)
 switch anotherPoint {
 case (let x, 0):
     print("on the y-axis with an x value of \(x)")
 case (0, let y):
     print("on the x-axis with a y value of \(y)")
-case let (z, w): //This acts as the default case. Since it is only assigning a tuple, any value matches.
+case let (z, w): //esse é o default
     print("somewhere else at (\(z), \(w))")
 }
 
-// Bind both values, plus test a condition.
+//:dá pra bindar valores e testar condições
 switch anotherPoint {
 case let (x, y) where x == y:
     print("x = y : \(x) = \(y)")
 default:
     break
-}
-
-// The fallthrough line forces the switch statement to fall into the default case after a previous case.
-switch anotherPoint {
-case let (x, y) where x == y:
-    print("x = y")
-    fallthrough
-default:
-    print(" are equal")
-}
-
-//Nesting while, for and switches can be confusing sometimes
-//Use labels to better use the break and continue statements
-
-master: while true {
-    loop: for rats in 1...5{
-        continue master
-    }
 }
